@@ -21,11 +21,18 @@ composer require codewithdennis/filament-lucide-icons
 ## Usage
 
 ```php
-use CodeWithDennis\FilamentLucideIcons\Enums\LucideIcon;
+use CodeWithDennis\FilamentLucideIcons\Enums\LucideIcon;use Filament\Support\Icons\Heroicon;
+```
 
-Forms\Components\TextInput::make('name')
-    ->prefixIcon(LucideIcon::User)
+```php
+Forms\Components\TextInput::make('email')
+    ->prefixIcon(LucideIcon::Mail)
+    ->email()
     ->required();
+```
+
+```php
+protected static string|BackedEnum|null $navigationIcon = LucideIcon::UsersRound;
 ```
 
 ## Contributing
