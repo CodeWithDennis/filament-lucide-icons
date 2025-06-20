@@ -21,8 +21,18 @@ composer require codewithdennis/filament-lucide-icons
 ## Usage
 
 ```php
-$filamentLucideIcons = new CodeWithDennis\FilamentLucideIcons();
-echo $filamentLucideIcons->echoPhrase('Hello, CodeWithDennis!');
+use CodeWithDennis\FilamentLucideIcons\Enums\LucideIcon;
+
+Forms\Components\TextInput::make('name')
+    ->prefixIcon(LucideIcon::User)
+    ->required();
+
+final class UserResource extends Resource
+{
+    protected static ?string $model = User::class;
+
+    protected static string|null|BackedEnum $navigationIcon = LucideIcon::Compass;
+}
 ```
 
 ## Contributing
