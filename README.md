@@ -5,9 +5,10 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/codewithdennis/filament-lucide-icons/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/codewithdennis/filament-lucide-icons/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/codewithdennis/filament-lucide-icons.svg?style=flat-square)](https://packagist.org/packages/codewithdennis/filament-lucide-icons)
 
-
-
 A **Filament 4** plugin that integrates Lucide icons, allowing you to use them seamlessly across Filament forms, tables, actions, and more.
+
+
+![thumbnail](https://raw.githubusercontent.com/CodeWithDennis/filament-lucide-icons/4.x/thumbnail.jpg)
 
 ## Installation
 
