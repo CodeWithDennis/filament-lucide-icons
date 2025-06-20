@@ -1658,6 +1658,6 @@ enum LucideIcon: string implements ScalableIcon
 
     public function getIconForSize(IconSize $size): string
     {
-        return "lucide-" . $this->value;
+        return 'lucide-' . $this->value;
     }
 }

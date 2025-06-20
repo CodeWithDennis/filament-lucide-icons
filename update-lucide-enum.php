@@ -5,8 +5,8 @@
 $svgDir = __DIR__ . '/vendor/mallardduck/blade-lucide-icons/resources/svg';
 $enumFile = __DIR__ . '/src/Enums/LucideIcon.php';
 
-if (!is_dir($svgDir)) {
-    die("SVG directory not found: $svgDir\n");
+if (! is_dir($svgDir)) {
+    exit("SVG directory not found: $svgDir\n");
 }
 
 $enumCases = [];
@@ -27,7 +27,7 @@ foreach ($files as $file) {
 
 sort($enumCases);
 
-$enumContent = "<?php
+$enumContent = '<?php
 
 namespace CodeWithDennis\\FilamentLucideIcons\\Enums;
 
@@ -36,15 +36,15 @@ use Filament\\Support\\Enums\\IconSize;
 
 enum LucideIcon: string implements ScalableIcon
 {
-" . implode("\n", $enumCases) . "
+' . implode("\n", $enumCases) . '
 
-    public function getIconForSize(IconSize \$size): string
+    public function getIconForSize(IconSize $size): string
     {
-        return \"lucide-\" . \$this->value;
+        return "lucide-" . $this->value;
     }
 }
-";
+';
 
 file_put_contents($enumFile, $enumContent);
 
-echo "LucideIcon enum generated with " . count($enumCases) . " icons from local vendor directory.\n"; 
+echo 'LucideIcon enum generated with ' . count($enumCases) . " icons from local vendor directory.\n";
