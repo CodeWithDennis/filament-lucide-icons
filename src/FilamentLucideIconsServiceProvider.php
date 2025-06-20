@@ -4,7 +4,6 @@ namespace CodeWithDennis\FilamentLucideIcons;
 
 use CodeWithDennis\FilamentLucideIcons\Commands\FilamentLucideIconsCommand;
 use Filament\Support\Assets\Asset;
-use Filament\Support\Facades\FilamentIcon;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -31,8 +30,7 @@ class FilamentLucideIconsServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
-        // Icon Registration
-        //        FilamentIcon::register($this->getIcons());
+        //
     }
 
     protected function getAssetPackageName(): ?string
