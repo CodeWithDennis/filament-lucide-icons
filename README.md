@@ -21,7 +21,7 @@ composer require codewithdennis/filament-lucide-icons
 ## Usage
 
 ```php
-use CodeWithDennis\FilamentLucideIcons\Enums\LucideIcon;use Filament\Support\Icons\Heroicon;
+use CodeWithDennis\FilamentLucideIcons\Enums\LucideIcon;
 ```
 
 ```php
