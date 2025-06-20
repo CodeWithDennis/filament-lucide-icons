@@ -2,7 +2,6 @@
 
 namespace CodeWithDennis\FilamentLucideIcons;
 
-use CodeWithDennis\FilamentLucideIcons\Commands\FilamentLucideIconsCommand;
 use Filament\Support\Assets\Asset;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
@@ -17,13 +16,10 @@ class FilamentLucideIconsServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package->name(static::$name)
-            ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->askToStarRepoOnGitHub('codewithdennis/filament-lucide-icons');
             });
-
-        $configFileName = $package->shortName();
     }
 
     public function packageRegistered(): void {}
