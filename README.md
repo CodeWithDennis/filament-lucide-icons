@@ -1,4 +1,4 @@
-# A Filament plugin that integrates Lucide icons, allowing you to use them seamlessly across Filament forms, tables, actions, and more.
+# Filament Lucide Icons
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/codewithdennis/filament-lucide-icons.svg?style=flat-square)](https://packagist.org/packages/codewithdennis/filament-lucide-icons)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/codewithdennis/filament-lucide-icons/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/codewithdennis/filament-lucide-icons/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -7,7 +7,7 @@
 
 
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+A **Filament 4** plugin that integrates Lucide icons, allowing you to use them seamlessly across Filament forms, tables, actions, and more.
 
 ## Installation
 
@@ -17,32 +17,6 @@ You can install the package via composer:
 composer require codewithdennis/filament-lucide-icons
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-lucide-icons-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-lucide-icons-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-lucide-icons-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```php
@@ -50,27 +24,15 @@ $filamentLucideIcons = new CodeWithDennis\FilamentLucideIcons();
 echo $filamentLucideIcons->echoPhrase('Hello, CodeWithDennis!');
 ```
 
-## Testing
-
-```bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
 ## Contributing
 
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
 ## Credits
 
 - [CodeWithDennis](https://github.com/CodeWithDennis)
+- [Mallardduck](https://github.com/mallardduck/blade-lucide-icons)
+- [Lucide](https://lucide.dev/icons/)
 - [All Contributors](../../contributors)
 
 ## License
