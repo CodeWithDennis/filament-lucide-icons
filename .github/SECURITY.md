@@ -1,3 +1,3 @@
 # Security Policy
 
-If you discover any security related issues, please email - instead of using the issue tracker.
+If you discover any security related issues, please contact me as soon as possible at.
