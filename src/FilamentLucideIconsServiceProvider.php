@@ -24,69 +24,22 @@ class FilamentLucideIconsServiceProvider extends PackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package->name(static::$name)
             ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
-                    ->publishConfigFile()
-                    ->publishMigrations()
-                    ->askToRunMigrations()
                     ->askToStarRepoOnGitHub('codewithdennis/filament-lucide-icons');
             });
 
         $configFileName = $package->shortName();
-
-        if (file_exists($package->basePath("/../config/{$configFileName}.php"))) {
-            $package->hasConfigFile();
-        }
-
-        if (file_exists($package->basePath('/../database/migrations'))) {
-            $package->hasMigrations($this->getMigrations());
-        }
-
-        if (file_exists($package->basePath('/../resources/lang'))) {
-            $package->hasTranslations();
-        }
-
-        if (file_exists($package->basePath('/../resources/views'))) {
-            $package->hasViews(static::$viewNamespace);
-        }
     }
 
     public function packageRegistered(): void {}
 
     public function packageBooted(): void
     {
-        // Asset Registration
-        FilamentAsset::register(
-            $this->getAssets(),
-            $this->getAssetPackageName()
-        );
-
-        FilamentAsset::registerScriptData(
-            $this->getScriptData(),
-            $this->getAssetPackageName()
-        );
-
         // Icon Registration
-        FilamentIcon::register($this->getIcons());
-
-        // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-lucide-icons/{$file->getFilename()}"),
-                ], 'filament-lucide-icons-stubs');
-            }
-        }
-
-        // Testing
-        Testable::mixin(new TestsFilamentLucideIcons);
+//        FilamentIcon::register($this->getIcons());
     }
 
     protected function getAssetPackageName(): ?string
@@ -100,9 +53,7 @@ class FilamentLucideIconsServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            // AlpineComponent::make('filament-lucide-icons', __DIR__ . '/../resources/dist/components/filament-lucide-icons.js'),
-            Css::make('filament-lucide-icons-styles', __DIR__ . '/../resources/dist/filament-lucide-icons.css'),
-            Js::make('filament-lucide-icons-scripts', __DIR__ . '/../resources/dist/filament-lucide-icons.js'),
+            //
         ];
     }
 
@@ -146,7 +97,7 @@ class FilamentLucideIconsServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_filament-lucide-icons_table',
+            //
         ];
     }
 }
