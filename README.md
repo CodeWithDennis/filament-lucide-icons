@@ -25,14 +25,22 @@ use CodeWithDennis\FilamentLucideIcons\Enums\LucideIcon;
 ```
 
 ```php
-Forms\Components\TextInput::make('email')
-    ->prefixIcon(LucideIcon::Mail)
-    ->email()
-    ->required();
+public static function configure(Schema $schema): Schema
+{
+    return $schema
+        ->components([
+            Forms\Components\TextInput::make('email')
+                ->prefixIcon(LucideIcon::Mail)
+                ->email()
+                ->required();
+        ]);
 ```
 
 ```php
-protected static string|BackedEnum|null $navigationIcon = LucideIcon::UsersRound;
+final class UserResource extends Resource
+{
+    protected static string|BackedEnum|null $navigationIcon = LucideIcon::UsersRound;
+}
 ```
 
 ## Contributing
