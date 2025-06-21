@@ -7,6 +7,8 @@
 
 A Filament `4.x` plugin that integrates Lucide icons, allowing you to use them seamlessly across Filament forms, tables, actions, and more.
 
+![thumbnail](thumbnail.png)
+
 ## Installation
 
 You can install the package via composer:
