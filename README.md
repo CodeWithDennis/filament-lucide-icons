@@ -48,7 +48,6 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 ## Credits
 
 - [CodeWithDennis](https://github.com/CodeWithDennis)
-- [Mallardduck](https://github.com/mallardduck/blade-lucide-icons)
 - [Lucide](https://lucide.dev/icons/)
 - [All Contributors](../../contributors)
 
