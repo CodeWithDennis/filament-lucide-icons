@@ -2,7 +2,7 @@
 
 // This script reads all SVGs from the local vendor directory and generates the enum file.
 
-$svgDir = __DIR__ . '/vendor/mallardduck/blade-lucide-icons/resources/svg';
+$svgDir = __DIR__ . '/vendor/technikermathe/blade-lucide-icons/resources/svg';
 $enumFile = __DIR__ . '/src/Enums/LucideIcon.php';
 
 if (! is_dir($svgDir)) {
