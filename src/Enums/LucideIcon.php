@@ -166,6 +166,7 @@ enum LucideIcon: string implements ScalableIcon
     case BadgeTurkishLira = 'badge-turkish-lira';
     case BadgeX = 'badge-x';
     case BaggageClaim = 'baggage-claim';
+    case Balloon = 'balloon';
     case Ban = 'ban';
     case Banana = 'banana';
     case Bandage = 'bandage';
@@ -251,6 +252,7 @@ enum LucideIcon: string implements ScalableIcon
     case BookOpenCheck = 'book-open-check';
     case BookOpenText = 'book-open-text';
     case BookPlus = 'book-plus';
+    case BookSearch = 'book-search';
     case BookTemplate = 'book-template';
     case BookText = 'book-text';
     case BookType = 'book-type';
@@ -321,6 +323,7 @@ enum LucideIcon: string implements ScalableIcon
     case CalendarSync = 'calendar-sync';
     case CalendarX = 'calendar-x';
     case CalendarX2 = 'calendar-x-2';
+    case Calendars = 'calendars';
     case Camera = 'camera';
     case CameraOff = 'camera-off';
     case CandlestickChart = 'candlestick-chart';
@@ -328,6 +331,7 @@ enum LucideIcon: string implements ScalableIcon
     case CandyCane = 'candy-cane';
     case CandyOff = 'candy-off';
     case Cannabis = 'cannabis';
+    case CannabisOff = 'cannabis-off';
     case Captions = 'captions';
     case CaptionsOff = 'captions-off';
     case Car = 'car';
@@ -376,6 +380,12 @@ enum LucideIcon: string implements ScalableIcon
     case CheckSquare2 = 'check-square-2';
     case ChefHat = 'chef-hat';
     case Cherry = 'cherry';
+    case ChessBishop = 'chess-bishop';
+    case ChessKing = 'chess-king';
+    case ChessKnight = 'chess-knight';
+    case ChessPawn = 'chess-pawn';
+    case ChessQueen = 'chess-queen';
+    case ChessRook = 'chess-rook';
     case ChevronDown = 'chevron-down';
     case ChevronDownCircle = 'chevron-down-circle';
     case ChevronDownSquare = 'chevron-down-square';
@@ -437,6 +447,7 @@ enum LucideIcon: string implements ScalableIcon
     case CircleParkingOff = 'circle-parking-off';
     case CirclePause = 'circle-pause';
     case CirclePercent = 'circle-percent';
+    case CirclePile = 'circle-pile';
     case CirclePlay = 'circle-play';
     case CirclePlus = 'circle-plus';
     case CirclePoundSterling = 'circle-pound-sterling';
@@ -490,6 +501,7 @@ enum LucideIcon: string implements ScalableIcon
     case ClosedCaption = 'closed-caption';
     case Cloud = 'cloud';
     case CloudAlert = 'cloud-alert';
+    case CloudBackup = 'cloud-backup';
     case CloudCheck = 'cloud-check';
     case CloudCog = 'cloud-cog';
     case CloudDownload = 'cloud-download';
@@ -505,6 +517,7 @@ enum LucideIcon: string implements ScalableIcon
     case CloudSnow = 'cloud-snow';
     case CloudSun = 'cloud-sun';
     case CloudSunRain = 'cloud-sun-rain';
+    case CloudSync = 'cloud-sync';
     case CloudUpload = 'cloud-upload';
     case Cloudy = 'cloudy';
     case Clover = 'clover';
@@ -739,10 +752,12 @@ enum LucideIcon: string implements ScalableIcon
     case Filter = 'filter';
     case FilterX = 'filter-x';
     case Fingerprint = 'fingerprint';
+    case FingerprintPattern = 'fingerprint-pattern';
     case FireExtinguisher = 'fire-extinguisher';
     case Fish = 'fish';
     case FishOff = 'fish-off';
     case FishSymbol = 'fish-symbol';
+    case FishingHook = 'fishing-hook';
     case Flag = 'flag';
     case FlagOff = 'flag-off';
     case FlagTriangleLeft = 'flag-triangle-left';
@@ -798,6 +813,7 @@ enum LucideIcon: string implements ScalableIcon
     case Folders = 'folders';
     case Footprints = 'footprints';
     case Forklift = 'forklift';
+    case Form = 'form';
     case FormInput = 'form-input';
     case Forward = 'forward';
     case Frame = 'frame';
@@ -887,6 +903,7 @@ enum LucideIcon: string implements ScalableIcon
     case Hash = 'hash';
     case HatGlasses = 'hat-glasses';
     case Haze = 'haze';
+    case Hd = 'hd';
     case HdmiPort = 'hdmi-port';
     case Heading = 'heading';
     case Heading1 = 'heading-1';
@@ -983,6 +1000,7 @@ enum LucideIcon: string implements ScalableIcon
     case Layers = 'layers';
     case Layers2 = 'layers-2';
     case Layers3 = 'layers-3';
+    case LayersPlus = 'layers-plus';
     case Layout = 'layout';
     case LayoutDashboard = 'layout-dashboard';
     case LayoutGrid = 'layout-grid';
@@ -1157,6 +1175,7 @@ enum LucideIcon: string implements ScalableIcon
     case MouseOff = 'mouse-off';
     case MousePointer = 'mouse-pointer';
     case MousePointer2 = 'mouse-pointer-2';
+    case MousePointer2Off = 'mouse-pointer-2-off';
     case MousePointerBan = 'mouse-pointer-ban';
     case MousePointerClick = 'mouse-pointer-click';
     case MousePointerSquare = 'mouse-pointer-square';
@@ -1430,11 +1449,13 @@ enum LucideIcon: string implements ScalableIcon
     case ScissorsLineDashed = 'scissors-line-dashed';
     case ScissorsSquare = 'scissors-square';
     case ScissorsSquareDashedBottom = 'scissors-square-dashed-bottom';
+    case Scooter = 'scooter';
     case ScreenShare = 'screen-share';
     case ScreenShareOff = 'screen-share-off';
     case Scroll = 'scroll';
     case ScrollText = 'scroll-text';
     case Search = 'search';
+    case SearchAlert = 'search-alert';
     case SearchCheck = 'search-check';
     case SearchCode = 'search-code';
     case SearchSlash = 'search-slash';
@@ -1620,6 +1641,7 @@ enum LucideIcon: string implements ScalableIcon
     case Stethoscope = 'stethoscope';
     case Sticker = 'sticker';
     case StickyNote = 'sticky-note';
+    case Stone = 'stone';
     case StopCircle = 'stop-circle';
     case Store = 'store';
     case StretchHorizontal = 'stretch-horizontal';
@@ -1704,6 +1726,7 @@ enum LucideIcon: string implements ScalableIcon
     case ToggleRight = 'toggle-right';
     case Toilet = 'toilet';
     case ToolCase = 'tool-case';
+    case Toolbox = 'toolbox';
     case Tornado = 'tornado';
     case Torus = 'torus';
     case Touchpad = 'touchpad';
@@ -1798,6 +1821,7 @@ enum LucideIcon: string implements ScalableIcon
     case Utensils = 'utensils';
     case UtensilsCrossed = 'utensils-crossed';
     case UtilityPole = 'utility-pole';
+    case Van = 'van';
     case Variable = 'variable';
     case Vault = 'vault';
     case VectorSquare = 'vector-square';
@@ -1832,12 +1856,15 @@ enum LucideIcon: string implements ScalableIcon
     case WashingMachine = 'washing-machine';
     case Watch = 'watch';
     case Waves = 'waves';
+    case WavesArrowDown = 'waves-arrow-down';
+    case WavesArrowUp = 'waves-arrow-up';
     case WavesLadder = 'waves-ladder';
     case Waypoints = 'waypoints';
     case Webcam = 'webcam';
     case Webhook = 'webhook';
     case WebhookOff = 'webhook-off';
     case Weight = 'weight';
+    case WeightTilde = 'weight-tilde';
     case Wheat = 'wheat';
     case WheatOff = 'wheat-off';
     case WholeWord = 'whole-word';
@@ -1869,6 +1896,6 @@ enum LucideIcon: string implements ScalableIcon
 
     public function getIconForSize(IconSize $size): string
     {
-        return 'lucide-' . $this->value;
+        return "lucide-" . $this->value;
     }
 }
