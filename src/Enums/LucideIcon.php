@@ -199,6 +199,7 @@ enum LucideIcon: string implements ScalableIcon
     case BedDouble = 'bed-double';
     case BedSingle = 'bed-single';
     case Beef = 'beef';
+    case BeefOff = 'beef-off';
     case Beer = 'beer';
     case BeerOff = 'beer-off';
     case Bell = 'bell';
@@ -348,6 +349,7 @@ enum LucideIcon: string implements ScalableIcon
     case Castle = 'castle';
     case Cat = 'cat';
     case Cctv = 'cctv';
+    case CctvOff = 'cctv-off';
     case ChartArea = 'chart-area';
     case ChartBar = 'chart-bar';
     case ChartBarBig = 'chart-bar-big';
@@ -583,6 +585,7 @@ enum LucideIcon: string implements ScalableIcon
     case Dam = 'dam';
     case Database = 'database';
     case DatabaseBackup = 'database-backup';
+    case DatabaseSearch = 'database-search';
     case DatabaseZap = 'database-zap';
     case DecimalsArrowLeft = 'decimals-arrow-left';
     case DecimalsArrowRight = 'decimals-arrow-right';
@@ -643,6 +646,7 @@ enum LucideIcon: string implements ScalableIcon
     case Egg = 'egg';
     case EggFried = 'egg-fried';
     case EggOff = 'egg-off';
+    case Ellipse = 'ellipse';
     case Ellipsis = 'ellipsis';
     case EllipsisVertical = 'ellipsis-vertical';
     case Equal = 'equal';
@@ -758,6 +762,7 @@ enum LucideIcon: string implements ScalableIcon
     case FishOff = 'fish-off';
     case FishSymbol = 'fish-symbol';
     case FishingHook = 'fishing-hook';
+    case FishingRod = 'fishing-rod';
     case Flag = 'flag';
     case FlagOff = 'flag-off';
     case FlagTriangleLeft = 'flag-triangle-left';
@@ -853,6 +858,7 @@ enum LucideIcon: string implements ScalableIcon
     case GitFork = 'git-fork';
     case GitGraph = 'git-graph';
     case GitMerge = 'git-merge';
+    case GitMergeConflict = 'git-merge-conflict';
     case GitPullRequest = 'git-pull-request';
     case GitPullRequestArrow = 'git-pull-request-arrow';
     case GitPullRequestClosed = 'git-pull-request-closed';
@@ -866,6 +872,8 @@ enum LucideIcon: string implements ScalableIcon
     case Globe = 'globe';
     case Globe2 = 'globe-2';
     case GlobeLock = 'globe-lock';
+    case GlobeOff = 'globe-off';
+    case GlobeX = 'globe-x';
     case Goal = 'goal';
     case Gpu = 'gpu';
     case Grab = 'grab';
@@ -1011,6 +1019,8 @@ enum LucideIcon: string implements ScalableIcon
     case Leaf = 'leaf';
     case LeafyGreen = 'leafy-green';
     case Lectern = 'lectern';
+    case LensConcave = 'lens-concave';
+    case LensConvex = 'lens-convex';
     case LetterText = 'letter-text';
     case Library = 'library';
     case LibraryBig = 'library-big';
@@ -1020,7 +1030,9 @@ enum LucideIcon: string implements ScalableIcon
     case Lightbulb = 'lightbulb';
     case LightbulbOff = 'lightbulb-off';
     case LineChart = 'line-chart';
+    case LineDotRightHorizontal = 'line-dot-right-horizontal';
     case LineSquiggle = 'line-squiggle';
+    Case LineStyle = 'line-style';
     case Link = 'link';
     case Link2 = 'link-2';
     case Link2Off = 'link-2-off';
@@ -1107,6 +1119,7 @@ enum LucideIcon: string implements ScalableIcon
     case MenuSquare = 'menu-square';
     case Merge = 'merge';
     case MessageCircle = 'message-circle';
+    case MessageCircleCheck = 'message-circle-check';
     case MessageCircleCode = 'message-circle-code';
     case MessageCircleDashed = 'message-circle-dashed';
     case MessageCircleHeart = 'message-circle-heart';
@@ -1119,6 +1132,7 @@ enum LucideIcon: string implements ScalableIcon
     case MessageCircleWarning = 'message-circle-warning';
     case MessageCircleX = 'message-circle-x';
     case MessageSquare = 'message-square';
+    case MessageSquareCheck = 'message-square-check';
     case MessageSquareCode = 'message-square-code';
     case MessageSquareDashed = 'message-square-dashed';
     case MessageSquareDiff = 'message-square-diff';
@@ -1135,6 +1149,7 @@ enum LucideIcon: string implements ScalableIcon
     case MessageSquareWarning = 'message-square-warning';
     case MessageSquareX = 'message-square-x';
     case MessagesSquare = 'messages-square';
+    case Metronome = 'metronome';
     case Mic = 'mic';
     case Mic2 = 'mic-2';
     case MicOff = 'mic-off';
@@ -1150,6 +1165,8 @@ enum LucideIcon: string implements ScalableIcon
     case Minus = 'minus';
     case MinusCircle = 'minus-circle';
     case MinusSquare = 'minus-square';
+    case MirrorRectangular = 'mirror-rectangular';
+    case MirrorRound = 'mirror-round';
     case Monitor = 'monitor';
     case MonitorCheck = 'monitor-check';
     case MonitorCloud = 'monitor-cloud';
@@ -1164,6 +1181,8 @@ enum LucideIcon: string implements ScalableIcon
     case MonitorStop = 'monitor-stop';
     case MonitorUp = 'monitor-up';
     case MonitorX = 'monitor-x';
+    case MouseLeft = 'mouse-left';
+    case MouseRight = 'mouse-right';
     case Moon = 'moon';
     case MoonStar = 'moon-star';
     case MoreHorizontal = 'more-horizontal';
@@ -1346,6 +1365,7 @@ enum LucideIcon: string implements ScalableIcon
     case PowerSquare = 'power-square';
     case Presentation = 'presentation';
     case Printer = 'printer';
+    case PrinterX = 'printer-x';
     case PrinterCheck = 'printer-check';
     case Projector = 'projector';
     case Proportions = 'proportions';
@@ -1358,6 +1378,7 @@ enum LucideIcon: string implements ScalableIcon
     case Radiation = 'radiation';
     case Radical = 'radical';
     case Radio = 'radio';
+    case RadioOff = 'radio-off';
     case RadioReceiver = 'radio-receiver';
     case RadioTower = 'radio-tower';
     case Radius = 'radius';
@@ -1400,6 +1421,7 @@ enum LucideIcon: string implements ScalableIcon
     case ReplyAll = 'reply-all';
     case Rewind = 'rewind';
     case Ribbon = 'ribbon';
+    case Road = 'road';
     case Rocket = 'rocket';
     case RockingChair = 'rocking-chair';
     case RollerCoaster = 'roller-coaster';
@@ -1478,11 +1500,14 @@ enum LucideIcon: string implements ScalableIcon
     case Share2 = 'share-2';
     case Sheet = 'sheet';
     case Shell = 'shell';
+    case ShelvingUnit = 'shelving-unit';
     case Shield = 'shield';
     case ShieldAlert = 'shield-alert';
     case ShieldBan = 'shield-ban';
     case ShieldCheck = 'shield-check';
     case ShieldClose = 'shield-close';
+    case ShieldCog = 'shield-cog';
+    case ShieldCogCorner = 'shield-cog-corner';
     case ShieldEllipsis = 'shield-ellipsis';
     case ShieldHalf = 'shield-half';
     case ShieldMinus = 'shield-minus';
@@ -1556,6 +1581,7 @@ enum LucideIcon: string implements ScalableIcon
     case SplitSquareHorizontal = 'split-square-horizontal';
     case SplitSquareVertical = 'split-square-vertical';
     case Spool = 'spool';
+    case SportShoe = 'sport-shoe';
     case Spotlight = 'spotlight';
     case SprayCan = 'spray-can';
     case Sprout = 'sprout';
@@ -1570,11 +1596,15 @@ enum LucideIcon: string implements ScalableIcon
     case SquareArrowOutUpLeft = 'square-arrow-out-up-left';
     case SquareArrowOutUpRight = 'square-arrow-out-up-right';
     case SquareArrowRight = 'square-arrow-right';
+    case SquareArrowRightEnter = 'square-arrow-right-enter';
+    case SquareArrowRightExit = 'square-arrow-right-exit';
     case SquareArrowUp = 'square-arrow-up';
     case SquareArrowUpLeft = 'square-arrow-up-left';
     case SquareArrowUpRight = 'square-arrow-up-right';
     case SquareAsterisk = 'square-asterisk';
     case SquareBottomDashedScissors = 'square-bottom-dashed-scissors';
+    case SquareCenterlineDashedHorizontal = 'square-centerline-dashed-horizontal';
+    case SquareCenterlineDashedVertical = 'square-centerline-dashed-vertical';
     case SquareChartGantt = 'square-chart-gantt';
     case SquareCheck = 'square-check';
     case SquareCheckBig = 'square-check-big';
@@ -1731,6 +1761,7 @@ enum LucideIcon: string implements ScalableIcon
     case Torus = 'torus';
     case Touchpad = 'touchpad';
     case TouchpadOff = 'touchpad-off';
+    case TowelRack = 'towel-rack';
     case TowerControl = 'tower-control';
     case ToyBrick = 'toy-brick';
     case Tractor = 'tractor';
@@ -1795,6 +1826,7 @@ enum LucideIcon: string implements ScalableIcon
     case UserCircle2 = 'user-circle-2';
     case UserCog = 'user-cog';
     case UserCog2 = 'user-cog-2';
+    case UserKey = 'user-key';
     case UserLock = 'user-lock';
     case UserMinus = 'user-minus';
     case UserMinus2 = 'user-minus-2';
@@ -1804,6 +1836,7 @@ enum LucideIcon: string implements ScalableIcon
     case UserRound = 'user-round';
     case UserRoundCheck = 'user-round-check';
     case UserRoundCog = 'user-round-cog';
+    case UserRoundKey = 'user-round-key';
     case UserRoundMinus = 'user-round-minus';
     case UserRoundPen = 'user-round-pen';
     case UserRoundPlus = 'user-round-plus';
@@ -1886,11 +1919,25 @@ enum LucideIcon: string implements ScalableIcon
     case Wrench = 'wrench';
     case X = 'x';
     case XCircle = 'x-circle';
+    case XLineTop = 'x-line-top';
     case XOctagon = 'x-octagon';
     case XSquare = 'x-square';
     case Youtube = 'youtube';
     case Zap = 'zap';
     case ZapOff = 'zap-off';
+    case ZodiacAquarius = 'zodiac-aquarius';
+    case ZodiacAries = 'zodiac-aries';
+    case ZodiacCancer = 'zodiac-cancer';
+    case ZodiacCapricorn = 'zodiac-capricorn';
+    case ZodiacGemini = 'zodiac-gemini';
+    case ZodiacLeo = 'zodiac-leo';
+    case ZodiacLibra = 'zodiac-libra';
+    case ZodiacOphiuchus = 'zodiac-ophiuchus';
+    case ZodiacPisces = 'zodiac-pisces';
+    case ZodiacSagittarius = 'zodiac-sagittarius';
+    case ZodiacScorpio = 'zodiac-scorpio';
+    case ZodiacTaurus = 'zodiac-taurus';
+    case ZodiacVirgo = 'zodiac-virgo';
     case ZoomIn = 'zoom-in';
     case ZoomOut = 'zoom-out';
 
