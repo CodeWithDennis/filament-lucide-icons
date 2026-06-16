@@ -1043,7 +1043,7 @@ enum LucideIcon: string implements ScalableIcon
     case LineChart = 'line-chart';
     case LineDotRightHorizontal = 'line-dot-right-horizontal';
     case LineSquiggle = 'line-squiggle';
-    Case LineStyle = 'line-style';
+    case LineStyle = 'line-style';
     case Link = 'link';
     case Link2 = 'link-2';
     case Link2Off = 'link-2-off';
@@ -1195,8 +1195,6 @@ enum LucideIcon: string implements ScalableIcon
     case MonitorStop = 'monitor-stop';
     case MonitorUp = 'monitor-up';
     case MonitorX = 'monitor-x';
-    case MouseLeft = 'mouse-left';
-    case MouseRight = 'mouse-right';
     case Moon = 'moon';
     case MoonStar = 'moon-star';
     case MoreHorizontal = 'more-horizontal';
@@ -1205,6 +1203,7 @@ enum LucideIcon: string implements ScalableIcon
     case Mountain = 'mountain';
     case MountainSnow = 'mountain-snow';
     case Mouse = 'mouse';
+    case MouseLeft = 'mouse-left';
     case MouseOff = 'mouse-off';
     case MousePointer = 'mouse-pointer';
     case MousePointer2 = 'mouse-pointer-2';
@@ -1213,6 +1212,7 @@ enum LucideIcon: string implements ScalableIcon
     case MousePointerClick = 'mouse-pointer-click';
     case MousePointerSquare = 'mouse-pointer-square';
     case MousePointerSquareDashed = 'mouse-pointer-square-dashed';
+    case MouseRight = 'mouse-right';
     case Move = 'move';
     case Move3d = 'move-3d';
     case MoveDiagonal = 'move-diagonal';
@@ -1382,8 +1382,8 @@ enum LucideIcon: string implements ScalableIcon
     case PowerSquare = 'power-square';
     case Presentation = 'presentation';
     case Printer = 'printer';
-    case PrinterX = 'printer-x';
     case PrinterCheck = 'printer-check';
+    case PrinterX = 'printer-x';
     case Projector = 'projector';
     case Proportions = 'proportions';
     case Puzzle = 'puzzle';
@@ -1688,8 +1688,8 @@ enum LucideIcon: string implements ScalableIcon
     case StarCheck = 'star-check';
     case StarHalf = 'star-half';
     case StarMinus = 'star-minus';
-    case StarPlus = 'star-plus';
     case StarOff = 'star-off';
+    case StarPlus = 'star-plus';
     case StarX = 'star-x';
     case StepBack = 'step-back';
     case StepForward = 'step-forward';
